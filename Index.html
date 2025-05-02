@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Power of One</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 0; }
+    header { background: #222; color: white; padding: 20px; text-align: center; }
+    nav { text-align: right; padding: 10px 20px; background: #eee; }
+    nav button { margin-left: 10px; padding: 5px 10px; }
+    section { padding: 20px; max-width: 800px; margin: auto; background: white; }
+    .donate-buttons a { margin: 10px; display: inline-block; background: #0070f3; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; }
+    footer { background: #222; color: white; text-align: center; padding: 10px; margin-top: 30px; }
+  </style>
+  <script>
+    function toggleLanguage(lang) {
+      const en = document.querySelectorAll('.lang-en');
+      const hi = document.querySelectorAll('.lang-hi');
+      en.forEach(e => e.style.display = lang === 'en' ? 'block' : 'none');
+      hi.forEach(e => e.style.display = lang === 'hi' ? 'block' : 'none');
+    }
+    window.onload = () => toggleLanguage('en');
+  </script>
+</head>
+<body>
+  <header>
+    <h1>The Power of One</h1>
+    <p>Sponsored by <strong>The Saviour</strong></p>
+  </header>
+  <nav>
+    <button onclick="toggleLanguage('en')">English</button>
+    <button onclick="toggleLanguage('hi')">हिंदी</button>
+  </nav>
+  <section>
+    <div class="lang-en">
+      <h2>Our Mission</h2>
+      <p>We aim to build a community of compassion, powered by just ₹1 from every citizen, to help the poor and bring peace—without seeking government recognition.</p>
+    </div>
+    <div class="lang-hi">
+      <h2>हमारा उद्देश्य</h2>
+      <p>हम एक ऐसे समुदाय का निर्माण करना चाहते हैं जो केवल हर नागरिक से ₹1 की सहायता से गरीबों की मदद करे और शांति लाए—बिना किसी सरकारी मान्यता के।</p>
+    </div><div class="lang-en">
+  <h2>Donate ₹1</h2>
+  <p>Support us with a single rupee and become part of a powerful change.</p>
+</div>
+<div class="lang-hi">
+  <h2>₹1 दान करें</h2>
+  <p>हमें केवल ₹1 देकर एक शक्तिशाली परिवर्तन का हिस्सा बनें।</p>
+</div>
+
+<div class="donate-buttons">
+  <a href="#">Donate via Paytm</a>
+  <a href="#">Donate via Razorpay</a>
+</div>
+
+  </section>  <footer>
+    <p>© 2025 The Power of One. Operated by The Saviour.</p>
+  </footer>
+</body>
+</html>
